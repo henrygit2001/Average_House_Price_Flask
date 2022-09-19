@@ -46,7 +46,6 @@ class App:
         zoom_start = 5.0,
         min_zoom = 5.0
     )
-        ##gmaps = googlemaps.Client(key= "AIzaSyAcnO0RWb7FRV4xNNmMImufjT_VrmJ5QmM")
         world_map.add_child(folium.LatLngPopup()) 
         world_map.add_child(folium.ClickForMarker())
         map = st_folium(world_map, height=350, width=700)
