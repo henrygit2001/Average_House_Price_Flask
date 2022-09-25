@@ -66,7 +66,7 @@ class App:
         self.js.document.getElementById("map").innerHTML = world_map._repr_html_()
         ## Stuck...Trying to get the Longitude and Latitude after clicking randomly on the Map
         ##When inspecting the element of the popup box, the class that the Longitude and Latitude lies inside is called "leaflet-popup-content"
-        popup = self.js.document.getElementsByClassName("leaflet-control-mouseposition leaflet-control").innerHTML
+        popup = self.js.document.getElementsByClassName("leaflet-popup-content").innerHTML
         print(popup)
 
 @app.route("/")
